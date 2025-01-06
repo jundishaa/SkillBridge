@@ -4,9 +4,12 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 const connectDB = require('./config');
 const userRoutes = require('./routes/userRoutes');
-
-// Add the authRoutes import here
 const authRoutes = require('./routes/authRoutes');
+
+// Add the courseRoutes import here
+const courseRoutes = require('./routes/courseRoutes');
+const enrollmentRoutes = require('./routes/enrollmentRoutes');
+const progressRoutes = require('./routes/progressRoutes');
 
 // Load environment variables
 dotenv.config();
@@ -22,9 +25,12 @@ app.use(bodyParser.json());
 
 // Routes
 app.use('/api/users', userRoutes);
-
-// Add the auth route here
 app.use('/api/auth', authRoutes);
+
+// Add the course route here
+app.use('/api/courses', courseRoutes);
+app.use('/api/enroll', enrollmentRoutes);
+app.use('/api/progress', progressRoutes);
 
 // Sample route
 app.get('/', (req, res) => {
