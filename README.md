@@ -32,8 +32,8 @@ With SkillBridge, users can enroll in courses, complete lessons, and monitor the
 - **Axios**: For making API requests from the client to the server.  
 
 ### **Hosting & Deployment**  
-- **Frontend**: Deployed on [Netlify/Vercel].  
-- **Backend**: Hosted on [Heroku/Render].  
+- **Frontend**:will be Deployed on [Netlify/Vercel].  
+- **Backend**:will be  Hosted on [Heroku/Render].  
 - **Database**: MongoDB Atlas for a cloud-based NoSQL database solution.  
 
 ---
